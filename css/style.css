@@ -260,6 +260,17 @@ header .hidden {
     header.down .menu a:hover {
         color: black;
     }
+
+    /* display main logo */
+    .section-main img {
+        display: none;
+    }
+
+    /* title */
+    .title h3 {
+        font-size: 30px;
+    }
+
 }
 
 /*celular */  
@@ -267,6 +278,22 @@ header .hidden {
     .section-main h1{
         font-size: 50px;
         line-height: 60px;
+    }
+
+    /* brand */
+    header .brand {
+        font-size: 20px;
+        letter-spacing: 1;
+    }
+
+    /* title */
+    .title h3 {
+        font-size: 20px;
+    }
+
+    /* display footer bot */
+    footer .footer-bot {
+        display: none;
     }
 }
 
