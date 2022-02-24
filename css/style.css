@@ -291,6 +291,11 @@ header .hidden {
         font-size: 20px;
     }
 
+    /* display items */
+    .cap-logo {
+        display: none;
+    }
+
     /* display footer bot */
     footer .footer-bot {
         display: none;
