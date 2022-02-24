@@ -797,7 +797,7 @@ header .hidden {
 }
 
 .grid-social-item a {
-    width: 30%;
+    width: 50%;
     margin: auto;
 }
 
@@ -809,50 +809,91 @@ header .hidden {
 
 /* footer ------------------------------------------ */
 footer {
+    width: 100%;
+    margin: auto;
     margin-top: 50px;
 }
 
-.footer-content {
+/* .footer-container {
     display: grid;
-    grid-template-rows: 1fr 10px 1fr;
-    height: 140px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50px);
     background-color: rgb(19, 18, 18);
-    /* border: 2px solid blue; */
     color: white;
+    justify-items: center;
+    align-items: center;
+} */
+
+.footer-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "top"
+    "hr1"
+    "mid"
+    "hr2"
+    "at";
 }
 
 .footer-item {
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
-/* footer / top */
-.footer-item h5 {
+.footer-item-1 {
+    grid-area: top;
+}
+
+.footer-item-2 {
+    grid-area: hr1;
+}
+
+.footer-item-3 {
+    grid-area: mid;
+}
+
+.footer-item-4 {
+    grid-area: hr2;
+}
+
+.footer-item-attributions {
+    grid-area: at;
+}
+
+.footer-item-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item-attributions{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /* footer / mid */
 .footer-item hr {
-    width: 90%;
-    margin: auto;
-    height: 1px;
-    border: none;
-    opacity: 0.3;
-    background: gray;
-} 
-
-/* footer / bot */
-.footer-bot {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer-bot-part {
-    /* border: 1px solid green; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100%;
+    border: 1px solid gray;
+    opacity: 0.3;
 }
+
+footer a {
+    color: gray;
+}
+
+footer a:hover {
+    opacity: .7;
+}
+
