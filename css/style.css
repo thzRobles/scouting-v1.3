@@ -10,6 +10,7 @@
 }
   
 body {
+    user-select: none;
     /* min-height: 100vh; */
 }
 
@@ -804,6 +805,11 @@ header .hidden {
 .grid-social-item img {
     width: 100%;
     height: 100%;
+    transition: 0.5s;
+}
+
+.grid-social-item img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -813,16 +819,6 @@ footer {
     margin: auto;
     margin-top: 50px;
 }
-
-/* .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 50px);
-    background-color: rgb(19, 18, 18);
-    color: white;
-    justify-items: center;
-    align-items: center;
-} */
 
 .footer-container {
     padding-top: 10px;
