@@ -40,7 +40,7 @@ body {
 }
 
 .section-main img {
-    width: 550px;
+    width: 500px;
 }
 
 /* navbar */
@@ -57,7 +57,7 @@ header {
 
     align-items: center;
     align-content: center;
-    padding: 20px 5%;
+    padding: 20px 10px;
     padding-bottom: 35px;
     transition: 0.6s;
 }
@@ -65,7 +65,7 @@ header {
 /* navbar / scroll */
 header.down {
     background: white;
-    padding: 10px 5%;
+    padding: 10px 10px;
     padding-bottom: 32px;
 }
 
@@ -376,15 +376,30 @@ header .hidden {
 }
 
 .card .cap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: -150px;
+
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0,103,123,0.6);
+    height: 40%;
+    background: rgba(0,103,123,0.3);
     opacity: 0;
     transition: all 500ms ease-out;
     visibility: hidden;
     text-align: center; 
+}
+
+.cap a {
+    width: 100%;
+}
+
+.cap img {
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 /* hover / effect */
@@ -394,17 +409,18 @@ header .hidden {
     visibility: visible;
 }
 
-.card:hover > .cap h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
+.card:hover > .cap {
+    width: 100%;
+    margin-bottom: 0px;
 }
 
 .card .cap h3{
+    width: 100%;
     color: #fff;
     font-weight: 400px;
-    margin-bottom: 120px;
     transition: all 500ms ease-out;
-    margin-top: 30px;
+
+    padding-top: 30px;
 }
 
 .card .cap p {
@@ -412,8 +428,13 @@ header .hidden {
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
-    max-width: 220px;
     margin: auto;
+}
+
+.card .cap-logo {
+    width: 50px ;
+    height: 50px ;
+    border-radius: 50%;
 }
 
 /* buttons */
@@ -580,9 +601,11 @@ header .hidden {
 
 .grid-player-item, .grid-player-item a {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
     align-items: center;
+    align-content: center;
+    /* align-items: flex-start; */
     background-color: rgb(197, 197, 197);
     /* border: 1px solid black; */
     overflow: hidden;
@@ -591,6 +614,94 @@ header .hidden {
 
 .grid-player-item img {
     object-fit: cover;
+}
+
+.grid-player-item img:hover > {}
+
+/* main player / bg */
+.section-main-player {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg/techno.jpg);
+    /* background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(35, 47, 151, 0.4)), url(../img/bg/estadio.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid red; */
+}
+
+/* main player */
+
+.main-player-container {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 1fr 50%;
+}
+
+.main-player-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.main-player-item-1 {
+    align-items: flex-end;
+    grid-row: 1 /span 3;
+}
+
+.main-player-item-2 {
+    align-items: flex-end;
+}
+
+.main-player-item-3 {
+    align-items: flex-start;
+}
+
+.main-player-item-4 {
+    align-items: flex-start;
+}
+
+.section-main-player h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+}
+
+.section-main-player h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+}
+
+/* main player / items position */
+.player-photo{
+}
+
+.player-name {
+}
+
+.player-team {
+}
+
+.player-team-logo {
+    border-radius: 50%;
+}
+
+.section-main-player img:hover {
+    opacity: 0.8;
 }
 
 /* services ---------------------------------------- */
