@@ -292,7 +292,7 @@ header .hidden {
     }
 
     /* display items */
-    .cap-logo {
+    .cap-logo img{
         display: none;
     }
 
