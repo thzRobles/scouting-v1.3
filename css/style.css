@@ -767,6 +767,46 @@ header .hidden {
     width: 100%;
 }
 
+/* social media ------------------------------------ */
+.grid-social-container {
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+.grid-social {
+    width: 50%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    grid-gap: 20px;
+    justify-content: space-around;
+}
+
+.grid-social-item{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-social-item a {
+    width: 30%;
+    margin: auto;
+}
+
+.grid-social-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
 /* footer ------------------------------------------ */
 footer {
     margin-top: 50px;
