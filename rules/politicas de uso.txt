@@ -1,0 +1,11 @@
+Atribuir
+
+Flat icon:
+Incluye el siguiente enlace en un sitio visible, cerca del lugar donde estés usando el recurso. Si no es posible, también puedes incluirlo en el pie de tu página web, blog, newsletter o en la sección de créditos.
+<a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos">Instagram iconos creados por Pixel perfect - Flaticon</a>
+
+<a href="https://www.flaticon.es/iconos-gratis/youtube" title="youtube iconos">Youtube iconos creados por Rakib Hassan Rahim - Flaticon</a>
+
+<a href="https://www.flaticon.es/iconos-gratis/insignia-social-de-twitter" title="insignia social de twitter iconos">Insignia social de twitter iconos creados por Rakib Hassan Rahim - Flaticon</a>

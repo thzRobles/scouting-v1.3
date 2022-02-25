@@ -187,7 +187,7 @@ header .brand a {
 }
 
 /* hidden elements */
-header .hidden, li .hidden h4 {
+header .hidden, .section-main .hidden {
     display: none;
 }
 
@@ -305,6 +305,13 @@ header .hidden, li .hidden h4 {
     /* display main logo */
     .section-main img {
         display: none;
+    }
+
+    .section-main .hidden {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
     }
 
     /* title */
