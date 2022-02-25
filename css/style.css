@@ -717,7 +717,7 @@ header .hidden, .section-main .hidden {
     /* border: 2px solid red; */
 }
 
-/* main player */
+/* main player ----------------------------------------------------------------- */
 
 .main-player-container {
     width: 90%;
@@ -773,14 +773,6 @@ header .hidden, .section-main .hidden {
 }
 
 /* main player / items position */
-.player-photo{
-}
-
-.player-name {
-}
-
-.player-team {
-}
 
 .player-team-logo {
     border-radius: 50%;
@@ -788,6 +780,20 @@ header .hidden, .section-main .hidden {
 
 .section-main-player img:hover {
     opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .main-player-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .main-player-item-2, .main-player-item-3, .main-player-item-4 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
 }
 
 /* services ---------------------------------------- */
