@@ -782,12 +782,7 @@ header .hidden, .section-main .hidden {
     opacity: 0.8;
 }
 
-/* field */
-
-.field-container {
-    width: 90%;
-    margin: auto;
-}
+/* stats */
 
 .section-player-stats {
     width: 90%;
@@ -891,6 +886,7 @@ header .hidden, .section-main .hidden {
 }
 
 @media (max-width: 900px) {
+    /* main */
     .main-player-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -899,14 +895,17 @@ header .hidden, .section-main .hidden {
         display: none;
     }
 
+    .main-player-item-1 img {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    /* stats */
     .divide-line {
         display: none;
     }
 
-    .main-player-item-1 img {
-        width: 90%;
-        height: auto;
-    }
     .grid-stats {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
@@ -914,6 +913,18 @@ header .hidden, .section-main .hidden {
 }
 
 @media (max-width: 600px) {
+    /* main */
+
+
+    .main-player-item-1 img {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+
+    }
+
+    /* stats */
     .stats {
         width: 100%;
     }
