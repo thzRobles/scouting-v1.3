@@ -793,7 +793,10 @@ header .hidden, .section-main .hidden {
 }
 
 @media (max-width: 600px) {
-
+    .main-player-item-1 img {
+        width: 90%;
+        height: auto;
+    }
 }
 
 /* services ---------------------------------------- */
