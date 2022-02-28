@@ -61,12 +61,29 @@
         <div class="hr-container">
             <div class="hr-div"><hr class="hr-1"><hr class="hr-2"></div>
         </div>
+        
         <!-- grid container -->
         <div class="grid-player-container">
+
+            <!-- inputs -->
+            <input type="radio" id="todos" name="categories" value="todos">
+            <input type="radio" id="portero" name="categories" value="portero">
+            <input type="radio" id="defensa" name="categories" value="defensa">
+            <input type="radio" id="mediocampista" name="categories" value="mediocampista">
+            <input type="radio" id="delantero" name="categories" value="delantero">
+
+            <div class="grid-player-category">
+                <label for="todos">TODOS</label>
+                <label for="portero">PORTERO</label>
+                <label for="defensa">DEFENSA</label>
+                <label for="mediocampista">MEDIOCAMPISTA</label>
+                <label for="delantero">DELANTERO</label>
+            </div>
+
             <!-- grid -->
-            <div class="grid-player">
+            <div class="grid-player categories">
                 <!-- card -->
-                <div class="grid-player-item card">
+                <div class="grid-player-item card category" data-category="portero">
                     <a href="jugador.html"><img src="img/prof/cr7.jpg" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -75,7 +92,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 2
+                <div class="grid-player-item card category" data-category="defensa">JUGADOR 2
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -84,7 +101,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 3
+                <div class="grid-player-item card category" data-category="mediocampista">JUGADOR 3
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -93,7 +110,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 4
+                <div class="grid-player-item card category" data-category="delantero">JUGADOR 4
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -102,7 +119,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 5
+                <div class="grid-player-item card category" data-category="portero">JUGADOR 5
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -111,7 +128,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 6
+                <div class="grid-player-item card category" data-category="defensa">JUGADOR 6
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -120,7 +137,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 7
+                <div class="grid-player-item card category" data-category="defensa">JUGADOR 7
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -129,7 +146,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 8
+                <div class="grid-player-item card category" data-category="portero">JUGADOR 8
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -138,7 +155,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 9
+                <div class="grid-player-item card category" data-category="mediocampista">JUGADOR 9
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>
@@ -147,7 +164,7 @@
                     </a>
                 </div>
                 <!-- card -->
-                <div class="grid-player-item card">JUGADOR 10
+                <div class="grid-player-item card category" data-category="portero">JUGADOR 10
                     <a href="jugador.html"><img src="" alt=""></a>
                     <a class="cap" href="jugador.html">
                         <h3>JUGADOR</h3>

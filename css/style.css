@@ -669,11 +669,63 @@ header .hidden, .section-main .hidden {
     z-index: 2;
 }
 
+/* filtrar / categories */
+.section-profesionals, .section-talents {
+    width: 90%;
+    margin: auto;
+}
+.grid-player-container input[type="radio"] {
+    display: none;
+}
 
+.grid-player-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+
+}
+
+.grid-player-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.grid-player-category label {
+    margin: 10px 5px 10px 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background: #2D2E83;
+    color: white;
+    cursor: pointer;
+}
+
+.grid-player-category label:hover {
+    opacity: .8;
+}
+
+/* checked */
+[value="portero"]:checked ~ .categories .category:not([data-category~="portero"]) {
+    display: none;
+}
+
+[value="defensa"]:checked ~ .categories .category:not([data-category~="defensa"]) {
+    display: none;
+}
+
+[value="mediocampista"]:checked ~ .categories .category:not([data-category~="mediocampista"]) {
+    display: none;
+}
+
+[value="delantero"]:checked ~ .categories .category:not([data-category~="delantero"]) {
+    display: none;
+}
 
 /* grid / player */
 .grid-player {
-    width: 90%;
+    width: 100%;
     /* height: auto; */
     margin: auto;
     gap: 10px;
@@ -702,7 +754,9 @@ header .hidden, .section-main .hidden {
     object-fit: cover;
 }
 
-.grid-player-item img:hover > {}
+.grid-player-item img:hover > {
+
+}
 
 /* main player / bg */
 .section-main-player {
