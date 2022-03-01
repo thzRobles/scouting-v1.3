@@ -1,4 +1,4 @@
-/* reset --------------------------------------------- */
+/* reset ----------------------------------------------------------------------------------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +11,9 @@
   
 body {
     user-select: none;
-    /* min-height: 100vh; */
 }
 
-/* header -------------------------------------------- */
+/* header ---------------------------------------------------------------------------------------------------------------------------------- */
 /* bg */
 .section-main {
     position: relative;
@@ -49,13 +48,6 @@ header {
     z-index: 999;
     position: fixed;
     width: 100%;
-    /* display: grid; */
-    /* justify-content: space-around; */
-    /* grid-template-columns: auto; */
-    /* grid-template-columns: 12% 1fr 12%; */
-    /* grid-template-columns: repeat(3, max-content); */
-    /* grid-template-columns: auto 1fr auto; */
-
     align-items: center;
     align-content: center;
     padding: 20px 10px;
@@ -63,7 +55,7 @@ header {
     transition: 0.6s;
 }
 
-/* navbar / scroll */
+/* navbar > scroll */
 header.down {
     background: white;
     padding: 10px 10px;
@@ -75,7 +67,7 @@ header.down ul li a {
     color: black;
 }
 
-/* navbar / scroll / hover */
+/* navbar > scroll > hover */
 header.down .brand:hover,
 header.down ul li a:hover {
     background: rgb(19, 18, 18);
@@ -86,7 +78,7 @@ header.down .logo:hover {
     background: transparent;
 }
 
-/* brand */
+/* brand / logo */
 header .brand {
     color: #fff;
     font-size: 30px;
@@ -94,7 +86,6 @@ header .brand {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-
     cursor: pointer;
 }
 
@@ -106,20 +97,12 @@ header .logo img {
     cursor: pointer;
 }
 
-/* navbar / menu */
-header .menu {
-
-}
+/* navbar > menu */
 
 header .menu ul {
     width: 100%;
     display: grid;
-    /* grid-template-columns: auto auto auto auto auto; */
-    /* justify-content: space-around; */
-    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
     grid-template-columns: repeat(5, 1fr);
-
-    /* gap: 1rem; */
     grid-auto-rows: 35px;
 }
   
@@ -140,19 +123,16 @@ header .menu ul li a {
   
 header .menu a {
     color: #fff;
-    /* font-weight: 600; */
     text-transform: uppercase;
     font-size: 16px;
-    /* font-weight: 500; */
     text-decoration: none;
-    /* margin: 0 30px; */
     padding: 7px 12px;
     border-radius: 20px;
     transition: 0.3s;
     transition-property: color, background;
 }
 
-/* navbar / menu / hover */
+/* navbar > menu > hover */
 header .menu a:hover {
     color: #000;
     background: #fff;
@@ -162,13 +142,12 @@ header .logo:hover {
     background: transparent !important;
 }
 
-/* button */
+/* buttons */
 header .btn {
     display: flex;
     color: #fff;
     font-size: 25px;
     cursor: pointer;
-    /* display: none; */
 }
 
 header .home {
@@ -187,12 +166,13 @@ header .brand a {
 }
 
 /* hidden elements */
-header .hidden, .section-main .hidden {
+header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de mas, se puede remover y usar solo .hidden */
     display: none;
 }
 
 /* mediaquerys / 901px / tablet-- --------------------- */
 @media (max-width: 991px) {
+    
     /* hidden elements */
     header .hidden-nav-items{
         display: grid;
@@ -621,13 +601,7 @@ header .hidden, .section-main .hidden {
 	bottom: 30px;
 	right:30px;
     border-radius:50px;
-
-    /* background-color: #417539d5; */
-    /* background-color: #25d366; */
-    /* background-color: #2D2E83; */
     background-color: #35682d;
-
-    /* opacity: 0.8; */
 	color:#FFF;
   	z-index:100;
 }
@@ -639,15 +613,8 @@ header .hidden, .section-main .hidden {
 
 .float-button:hover{
 	text-decoration: none;
-    /* background-color: #fff; */
-	/* color: #25d366; */
-    
-    /* background-color: #25d366; */
-    /* color: #fff; */
-    
     opacity: 1;
     background-color: white;
-    /* color: #2D2E83; */
     color: #35682d;
 }
 
@@ -658,8 +625,6 @@ header .hidden, .section-main .hidden {
     width: 100%;
     min-height: 14vh;
     background: rgb(19, 18, 18);
-    /* background: #2D2E83; */
-    /* background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(35, 47, 151, 0.4)), url(../img/bg/estadio.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -671,7 +636,7 @@ header .hidden, .section-main .hidden {
 
 /* filtrar / categories */
 .section-profesionals, .section-talents {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .grid-player-container input[type="radio"] {
@@ -679,6 +644,8 @@ header .hidden, .section-main .hidden {
 }
 
 .grid-player-container {
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
