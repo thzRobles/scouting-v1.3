@@ -1056,36 +1056,11 @@ header .hidden, .section-main .hidden {
     }
 }
 
-@media (max-width: 450px) {
-    .player-name {
-        top: 30px;
-    }
-
-    .main-player-container h1 {
-        font-size: 16px;
-    }
-
-    /* team */
-    .player-team {
-        top: 60px
-    }
-
-    .main-player-container h2 {
-        font-size: 12px;
-    }
-
-    /* logo */
-    .player-team-logo {
-        top: 120px;
-        width: 90px;
-        height: 90px;
-    }
-}
 
 @media (max-width: 450px) {
     /* name */
     .player-name {
-        top: 30px;
+        top: 50px;
     }
 
     .main-player-container h1 {
@@ -1106,7 +1081,7 @@ header .hidden, .section-main .hidden {
 
     /* team */
     .player-team {
-        top: 60px
+        top: 80px
     }
 
     .main-player-container h2 {
@@ -1127,8 +1102,8 @@ header .hidden, .section-main .hidden {
 
     /* logo */
     .player-team-logo {
-        top: 30px;
-        right: 30px;
+        top: 40px;
+        right: 35px;
         width: 90px;
         height: 90px;
     }
