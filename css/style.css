@@ -219,7 +219,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         display: none;
     }
 
-    /* button / close */
+    /* button > close */
     header .menu .close-btn {
         position: absolute;
         top: 0;
@@ -234,9 +234,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         grid-template-columns: 1fr;
         justify-content: center;
         gap: 30px;
-        /* flex-direction: column; */
-        /* justify-content: space-around; */
-        /* grid-template-columns: auto; */
     }
 
     header .menu li {
@@ -251,7 +248,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         padding: 0 15px;
     }
 
-    /* navbar / scroll */
+    /* navbar > scroll */
     header, header.down {
         padding: 20px 5%;
     }
@@ -261,23 +258,23 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         color: black;
     }
 
-    /* navbar / scroll / hover */
+    /* navbar > scroll > hover */
     header.down .brand:hover,
     header.down ul li a:hover {
         background: none;
     }
 
-    /* navbar / scroll / style btn-x */
+    /* navbar > scroll > style btn-x */
     header.down .btn-x {
         color: white;
     }
 
-    /* navbar / scroll / style menu responsive */
+    /* navbar > scroll > style menu responsive */
     header.down .menu a {
         color: white;
     }
 
-    /* navbar / scroll / style menu responsive / hover */
+    /* navbar > scroll > style menu responsive > hover */
     header.down .menu a:hover {
         color: black;
     }
@@ -331,7 +328,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 /* hr --------------------------------------------- */
-
 .hr-div {
     position: relative;
     width: 90%;
@@ -362,7 +358,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 /* carousel ---------------------------------------- */
-
 .title {
     text-align: center;
     font-size: 40px;
@@ -419,9 +414,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     bottom: 0;
     width: 100%;
     height: 50%;
-    /* background: rgba(0,103,123,0.3); */
-    /* background: rgba(0, 0, 0, 0.8); */
-    /* background: #2d2f8356; */
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
     opacity: 0;
     transition: all 500ms ease-out;
@@ -438,8 +430,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     margin-bottom: 10px;
 }
 
-/* hover / effect */
-
+/* hover effect */
 .card:hover > .cap {
     opacity: 1;
     visibility: visible;
@@ -454,7 +445,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     width: 100%;
     height: 100%;
     display: grid;
-    /* grid-template-rows: 25% 15% 60%; */
     grid-template-columns: auto;
     justify-content: space-around;
     justify-items: center;
@@ -465,7 +455,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     color: #fff;
     font-weight: 400px;
     align-self: flex-end;
-    /* transition: all 500ms ease-out; */
 }
 
 .card .cap p {
@@ -480,11 +469,9 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     width: 80px ;
     height: 80px ;
     border-radius: 50%;
-
 }
 
 /* buttons */
-
 .btn-container{
     width: 90%;
     height: 100%;
@@ -514,7 +501,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 
-/* grid -------------------------------------------- */
+/* grid about index -------------------------------------------- */
 .grid-about-container {
     width: 90%;
     margin: auto;
@@ -541,7 +528,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
-
 
 .grid-about-item h3{
     font-size: 28px;
@@ -572,6 +558,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     background: linear-gradient(rgba(25, 59, 50, 0.60), rgba(90, 92, 54, 0.6)), url(../img/cmos/b6.jpg);
 }
 
+/* tablet / celular */
 @media (max-width: 830px) {
     .grid-about {
         grid-template-columns: auto;
@@ -587,10 +574,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 /* float button ------------------------------------ */
-.float-container {
-
-}
-
 .float-button{
 	position:fixed;
     display: flex;
@@ -634,7 +617,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     z-index: 2;
 }
 
-/* filtrar / categories */
+/* filter / categories */
 .section-profesionals, .section-talents {
     width: 100%;
     margin: auto;
@@ -650,7 +633,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     gap: 20px;
-
 }
 
 .grid-player-category {
@@ -693,11 +675,9 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 /* grid / player */
 .grid-player {
     width: 100%;
-    /* height: auto; */
     margin: auto;
     gap: 10px;
     display: grid;
-    /* grid-auto-rows: 22rem; */
     grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
     justify-content: space-between;
     text-align: center;
@@ -710,9 +690,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     justify-content: center;
     align-items: center;
     align-content: center;
-    /* align-items: flex-start; */
     background-color: rgb(197, 197, 197);
-    /* border: 1px solid black; */
     overflow: hidden;
     height: 320px;
 }
@@ -721,21 +699,15 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     object-fit: cover;
 }
 
-.grid-player-item img:hover > {
-
-}
-
 /* main player / bg */
 .section-main-player {
     position: relative;
     width: 100%;
     height: 86vh;
     background: url(../img/bg/techno.jpg);
-    /* background: linear-gradient(rgba(31, 31, 31, 0.4), rgba(35, 47, 151, 0.4)), url(../img/bg/estadio.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 2px solid red; */
 }
 
 /* main player ----------------------------------------------------------------- */
@@ -753,7 +725,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
 }
 
 .main-player-item-1 {
@@ -794,7 +765,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 /* main player / items position */
-
 .player-team-logo {
     border-radius: 50%;
 }
@@ -804,7 +774,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 /* stats */
-
 .section-player-stats {
     width: 90%;
     margin: auto;
@@ -818,17 +787,13 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     grid-template-columns: 1fr 3px 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    /* border: 1px solid red; */
-    
 }
 
 .stats {
     width: 90%;
     height: 100%;
     grid-template-columns: 100%;
-    /* border: 1px solid blue; */
     display: grid;
-    /* justify-content: start; */
     align-items: flex-start;
     align-content: flex-start;
     margin-bottom: 30px;
@@ -889,14 +854,10 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     height: 100%;
     background: gray;
     opacity: .7;
-    
-
-    
 }
 
 .divide-line {
     grid-area: 1 / 2 / 3 / 3;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -906,12 +867,11 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     padding: 12px;
 }
 
+/* tablet */
 @media (max-width: 900px) {
     /* main */
     .main-player-container {
         display: flex;
-        /* grid-template-columns: 1fr;
-        grid-template-rows: 1fr; */
         justify-content: flex-start;
     }
 
@@ -948,10 +908,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         border-radius: 50px;
     }
 
-    .main-player-item-2, .main-player-item-3, .main-player-item-4 {
-        
-    }
-
+    /* photo */
     .main-player-item-1 img {
         display: flex;
         justify-content: center;
@@ -969,9 +926,8 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
+/* celular */
 @media (max-width: 600px) {
-
-    /* main */
 
     /* name */
     .player-name {
@@ -998,8 +954,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         height: 90px;
     }
 
-    /* siluet */
-
+    /* photo */
     .main-player-item-1 img {
         display: flex;
         justify-content: center;
@@ -1023,7 +978,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
-
+/* celular -- */
 @media (max-width: 450px) {
     /* name */
     .player-name {
@@ -1032,7 +987,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 
     .main-player-container h1 {
         font-size: 15px;
-
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -1053,7 +1007,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 
     .main-player-container h2 {
         font-size: 12px;
-
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -1084,7 +1037,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 
     .main-player-container h1 {
         font-size: 15px;
-
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -1105,7 +1057,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 
     .main-player-container h2 {
         font-size: 12px;
-
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -1122,7 +1073,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     /* logo */
     .player-team-logo {
         top: 120px;
-
         margin: 0px;
         padding: 0px;
         width: 100%;
@@ -1132,12 +1082,12 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
         justify-self: center;
         left: calc(50% - 45px);
         letter-spacing: 0;
-        
         width: 90px;
         height: 90px;
     }
 }
 
+/* celular -- */
 @media (max-width: 200px) {
     .main-player-item-2, .main-player-item-3, .main-player-item-4 {
         display: none;
@@ -1145,7 +1095,6 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 /* services ---------------------------------------- */
-
 /* description */
 .description {
     width: 90%;
@@ -1206,6 +1155,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     transform: scale(1.1);
 }
 
+/* tablet */
 @media (max-width: 900px) {
     .grid-social {
         width: 60%;
@@ -1215,6 +1165,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
+/* celular */
 @media (max-width: 600px) {
     .grid-social {
         width: 90%;
@@ -1304,12 +1255,14 @@ footer a:hover {
     opacity: .7;
 }
 
+/* tablet */
 @media (max-width: 900px) {
     .footer-item-3 {
         grid-template-columns: 1fr;
     }
 }
 
+/* celular */
 @media (max-width:600px) {
 
 }
