@@ -942,11 +942,47 @@ header .hidden, .section-main .hidden {
 @media (max-width: 900px) {
     /* main */
     .main-player-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr; */
+        justify-content: flex-start;
     }
+
+    /* logo / name / / team / position */
+    /* name */
+    .player-name {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+
+    .section-main-player h1 {
+        font-size: 20px;
+    }
+
+    /* team */
+    .player-team {
+        position: absolute;
+        top: 70px;
+        right: 30px;
+    }
+
+    .section-main-player h2 {
+        font-size: 16px;
+    }
+
+    /* logo */
+    .player-team-logo {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        top: 140px;
+        right: 30px;
+        border-radius: 50px;
+    }
+
     .main-player-item-2, .main-player-item-3, .main-player-item-4 {
-        display: none;
+        
     }
 
     .main-player-item-1 img {
@@ -967,8 +1003,35 @@ header .hidden, .section-main .hidden {
 }
 
 @media (max-width: 600px) {
+
     /* main */
 
+    /* name */
+    .player-name {
+        top: 15px;
+    }
+
+    .main-player-container h1 {
+        font-size: 16px;
+    }
+
+    /* team */
+    .player-team {
+        top: 35px
+    }
+
+    .main-player-container h2 {
+        font-size: 12px;
+    }
+
+    /* logo */
+    .player-team-logo {
+        top: 90px;
+        width: 90px;
+        height: 90px;
+    }
+
+    /* siluet */
 
     .main-player-item-1 img {
         display: flex;
@@ -990,6 +1053,152 @@ header .hidden, .section-main .hidden {
 
     .grid-stats h3 {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .player-name {
+        top: 30px;
+    }
+
+    .main-player-container h1 {
+        font-size: 16px;
+    }
+
+    /* team */
+    .player-team {
+        top: 60px
+    }
+
+    .main-player-container h2 {
+        font-size: 12px;
+    }
+
+    /* logo */
+    .player-team-logo {
+        top: 120px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 450px) {
+    /* name */
+    .player-name {
+        top: 30px;
+    }
+
+    .main-player-container h1 {
+        font-size: 15px;
+
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        left: 0;
+        right: 0;
+        letter-spacing: 0;
+    }
+
+    /* team */
+    .player-team {
+        top: 60px
+    }
+
+    .main-player-container h2 {
+        font-size: 12px;
+
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        left: 0;
+        right: 0;
+        letter-spacing: 0;
+    }
+
+    /* logo */
+    .player-team-logo {
+        top: 30px;
+        right: 30px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 380px) {
+    /* name */
+    .player-name {
+        top: 30px;
+    }
+
+    .main-player-container h1 {
+        font-size: 15px;
+
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        left: 0;
+        right: 0;
+        letter-spacing: 0;
+    }
+
+    /* team */
+    .player-team {
+        top: 60px
+    }
+
+    .main-player-container h2 {
+        font-size: 12px;
+
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        left: 0;
+        right: 0;
+        letter-spacing: 0;
+    }
+
+    /* logo */
+    .player-team-logo {
+        top: 120px;
+
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        left: calc(50% - 45px);
+        letter-spacing: 0;
+        
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 200px) {
+    .main-player-item-2, .main-player-item-3, .main-player-item-4 {
+        display: none;
     }
 }
 
