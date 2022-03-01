@@ -170,7 +170,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     display: none;
 }
 
-/* mediaquerys / 901px / tablet-- --------------------- */
+/* mediaquerys / 901px / tablet-- */
 @media (max-width: 991px) {
     
     /* hidden elements */
@@ -327,7 +327,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
-/* hr --------------------------------------------- */
+/* hr -------------------------------------------------------------------------------------------------------------------------------------- */
 .hr-div {
     position: relative;
     width: 90%;
@@ -357,7 +357,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     z-index: -1;
 }
 
-/* carousel ---------------------------------------- */
+/* carousel -------------------------------------------------------------------------------------------------------------------------------- */
 .title {
     text-align: center;
     font-size: 40px;
@@ -501,7 +501,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 
-/* grid about index -------------------------------------------- */
+/* grid about ------------------------------------------------------------------------------------------------------------------------------ */
 .grid-about-container {
     width: 90%;
     margin: auto;
@@ -573,7 +573,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
-/* float button ------------------------------------ */
+/* float button ---------------------------------------------------------------------------------------------------------------------------- */
 .float-button{
 	position:fixed;
     display: flex;
@@ -601,7 +601,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     color: #35682d;
 }
 
-/* profesionals / talentos ------------------------- */
+/* profesionals / talentos ----------------------------------------------------------------------------------------------------------------- */
 /* bg / main-second */
 .section-main-second {
     position: relative;
@@ -652,7 +652,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 }
 
 .grid-player-category label:hover {
-    opacity: .8;
+    opacity: 0.9;
 }
 
 /* checked */
@@ -710,7 +710,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     background-position: center;
 }
 
-/* main player ----------------------------------------------------------------- */
+/* main player ----------------------------------------------------------------------------------------------------------------------------- */
 
 .main-player-container {
     width: 90%;
@@ -764,13 +764,13 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     text-shadow: 0 0 3px #fff, 0 0 3px #000000;
 }
 
-/* main player / items position */
+/* main player > items positions */
 .player-team-logo {
     border-radius: 50%;
 }
 
 .section-main-player img:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* stats */
@@ -1094,7 +1094,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
-/* services ---------------------------------------- */
+/* services -------------------------------------------------------------------------------------------------------------------------------- */
 /* description */
 .description {
     width: 90%;
@@ -1111,7 +1111,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     width: 100%;
 }
 
-/* social media ------------------------------------ */
+/* social media ---------------------------------------------------------------------------------------------------------------------------- */
 .grid-social-container {
     width: 90%;
     margin: auto;
@@ -1175,7 +1175,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
     }
 }
 
-/* footer ------------------------------------------ */
+/* footer ----------------------------------------------------------------------------------------------------------------------------------- */
 footer {
     width: 100%;
     margin: auto;
@@ -1240,7 +1240,7 @@ footer {
     align-items: flex-start;
 }
 
-/* footer / mid */
+/* footer mid */
 .footer-item hr {
     width: 100%;
     border: 1px solid gray;
