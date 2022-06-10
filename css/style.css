@@ -5,16 +5,35 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    /* font-family: verdana; */
+    font-family: verdana;
     /* font-family: 'Oswald', sans-serif; */ /** Elejir un tipo de letra */
 }
 
 html {
     scroll-behavior: smooth;
 }
-  
+
 body {
     user-select: none;
+    /* background-image: url(../img/bg/hexay.jpg); */
+    background: linear-gradient(rgba(255, 255, 255, 0.445), rgba(255, 255, 255, 0.459)), url(../img/bg/hexay.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+/* general ----------------------------------------------------------------------------------------------------------------------------------*/
+h3, p, a {
+    font-style: bold !important;
+}
+
+img, .grid-about-item, .grid-player-item, .hr-1 {
+    border-radius: 7px;
+}
+
+.btn-container a {
+    border-radius: 7px !important;
 }
 
 /* header ---------------------------------------------------------------------------------------------------------------------------------- */
@@ -502,6 +521,7 @@ header .hidden, .section-main .hidden { /** La clase .hidden-nav-items esta de m
 
 .btn-container a:hover {
     opacity: 0.9;
+    transform: scale(1.03);
 }
 
 
